@@ -1,0 +1,111 @@
+# Benchmark "./duplicate_netlist/slow_gcd" written by ABC on Sun Feb 23 19:22:15 2020
+.model ./duplicate_netlist/slow_gcd
+.inputs I0_0 I0_1 I0_2 I0_3 I1_0 I1_1 I1_2 I1_3
+.outputs R0_OUT_0 R0_OUT_1 R0_OUT_2 R0_OUT_3 R1_OUT_0 R1_OUT_1 R1_OUT_2 \
+ R1_OUT_3
+
+.latch        n18        SEL  2
+.latch        n23   R0_OUT_0  2
+.latch        n28   R0_OUT_1  2
+.latch        n33   R0_OUT_2  2
+.latch        n38   R0_OUT_3  2
+.latch        n43   R1_OUT_0  2
+.latch        n48   R1_OUT_1  2
+.latch        n53   R1_OUT_2  2
+.latch        n58   R1_OUT_3  2
+
+.names new_B0_0_ new_B0compl_0_
+0 1
+.names new_B0_1_ new_B0compl_1_
+0 1
+.names new_B0_2_ new_B0compl_2_
+0 1
+.names new_B0_3_ new_B0compl_3_
+0 1
+.names new_A0_0_ new_B0compl_0_ new_P0_0_
+01 1
+10 1
+.names new_A0_1_ new_B0compl_1_ new_P0_1_
+01 1
+10 1
+.names new_A0_2_ new_B0compl_2_ new_P0_2_
+01 1
+10 1
+.names new_A0_3_ new_B0compl_3_ new_P0_3_
+01 1
+10 1
+.names new_A0_0_ new_B0compl_0_ new_G0_0_
+11 1
+.names new_A0_1_ new_B0compl_1_ new_G0_1_
+11 1
+.names new_A0_2_ new_B0compl_2_ new_G0_2_
+11 1
+.names new_C0_0_
+ 1
+.names new_P0_0_ new_C0_0_ new_C0_1_AUX_
+11 1
+.names new_G0_0_ new_C0_1_AUX_ new_C0_1_
+00 0
+.names new_P0_1_ new_C0_1_ new_C0_2_AUX_
+11 1
+.names new_G0_1_ new_C0_2_AUX_ new_C0_2_
+00 0
+.names new_P0_2_ new_C0_2_ new_C0_3_AUX_
+11 1
+.names new_G0_2_ new_C0_3_AUX_ new_C0_3_
+00 0
+.names new_P0_0_ new_C0_0_ new_AminusB0_0_
+01 1
+10 1
+.names new_P0_1_ new_C0_1_ new_AminusB0_1_
+01 1
+10 1
+.names new_P0_2_ new_C0_2_ new_AminusB0_2_
+01 1
+10 1
+.names new_P0_3_ new_C0_3_ new_AminusB0_3_
+01 1
+10 1
+.names new_C0_3_ R1_OUT_0 new_AminusB0_0_ n23
+0-1 1
+11- 1
+.names new_C0_3_ R1_OUT_1 new_AminusB0_1_ n28
+0-1 1
+11- 1
+.names new_C0_3_ R1_OUT_2 new_AminusB0_2_ n33
+0-1 1
+11- 1
+.names new_C0_3_ R1_OUT_3 new_AminusB0_3_ n38
+0-1 1
+11- 1
+.names new_C0_3_ R0_OUT_0 R1_OUT_0 n43
+0-1 1
+11- 1
+.names new_C0_3_ R0_OUT_1 R1_OUT_1 n48
+0-1 1
+11- 1
+.names new_C0_3_ R0_OUT_2 R1_OUT_2 n53
+0-1 1
+11- 1
+.names new_C0_3_ R0_OUT_3 R1_OUT_3 n58
+0-1 1
+11- 1
+.names R0_OUT_0 new_A0_0_
+1 1
+.names R0_OUT_1 new_A0_1_
+1 1
+.names R0_OUT_2 new_A0_2_
+1 1
+.names R0_OUT_3 new_A0_3_
+1 1
+.names R1_OUT_0 new_B0_0_
+1 1
+.names R1_OUT_1 new_B0_1_
+1 1
+.names R1_OUT_2 new_B0_2_
+1 1
+.names R1_OUT_3 new_B0_3_
+1 1
+.names n18
+ 1
+.end
